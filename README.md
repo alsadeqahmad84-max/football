@@ -45,7 +45,9 @@ Open `http://localhost:5173/football` while the Vite development server is runni
 
 ### Other league match centres
 
-Clicking the LaLiga, Serie A, Bundesliga, or Ligue 1 logo switches the dashboard to that league’s fixtures, standings, scores, goal reports, and match lineups. These feeds use API-Football through a server-side Vite proxy. Add `API_FOOTBALL_KEY=your_key` to the ignored `.env.local` file and restart the dev server. The key stays on the server and is never sent to browser code. Without it, the selected league shows a setup message instead of fabricated match data. The provider’s free plan currently includes 100 requests per day; the proxy caches fixture, table, and match report responses to limit usage.
+Clicking the LaLiga, Serie A, Bundesliga, or Ligue 1 logo switches the dashboard to that league’s fixtures, standings, scores, goal reports, and match lineups. Local development uses the Vite server proxies; Vercel deployments use the Node function in `api/[...path].ts` for FPL fixtures, Premier League reports, league feeds, coaches, and highlight lookup. Set `API_FOOTBALL_KEY` in `.env.local` for local development and as a server-side environment variable in Vercel for other-league feeds. The key stays out of browser code. Without it, those leagues show a setup message instead of fabricated match data. The provider’s free plan currently includes 100 requests per day; responses are cached to limit usage.
+
+The football highlight function searches the beIN SPORTS catalogue first and uses official-source search as a fallback. Set `TAVILY_API_KEY` in Vercel if you want the fallback search available in production; `.env.local` is ignored by Git and is not uploaded with the project.
 # Tavily web research
 
 The Web research area searches public web sources through Tavily. The API key is read by the local Vite server from `.env.local` and is never included in browser code. Keep `.env.local` private and do not share it. Restart the development server after changing the key.

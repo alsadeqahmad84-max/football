@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/football", "destination": "/index.html" },
+    { "source": "/football/:path*", "destination": "/index.html" },
+    { "source": "/invoices", "destination": "/index.html" },
+    { "source": "/invoices/:path*", "destination": "/index.html" }
+  ]
+}
