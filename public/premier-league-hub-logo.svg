@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="240" viewBox="0 0 840 240" role="img" aria-labelledby="title description">
+  <title id="title">Premier League Match Centre</title>
+  <desc id="description">A modern football shield and ball emblem beside the Premier League Match Centre wordmark.</desc>
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#36214f"/>
+      <stop offset="1" stop-color="#7040a1"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcff83"/>
+      <stop offset="1" stop-color="#b6ed43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#221434" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <rect x="5" y="5" width="830" height="230" rx="30" fill="#fff" filter="url(#shadow)"/>
+  <path d="M118 25 199 55v62c0 45-30 77-81 99-51-22-81-54-81-99V55z" fill="url(#shield)"/>
+  <path d="M118 36 188 62v55c0 37-23 65-70 87-47-22-70-50-70-87V62z" fill="none" stroke="url(#lime)" stroke-width="5"/>
+  <path d="M57 81c15-34 46-51 82-39 26 9 40 33 41 59" fill="none" stroke="#c9f264" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+  <circle cx="118" cy="112" r="37" fill="none" stroke="#f8f7fb" stroke-width="4"/>
+  <path d="m118 83 12 9-5 14h-14l-5-14z" fill="url(#lime)"/>
+  <path d="m106 92-14 2-7 13 12 8 14-9m19-14 13 3 6 13-12 8-14-9m-31 7 4 17 16 7 16-7 4-17m-35-1-13 3-4 14m52-17 13 3 4 14m-37 4v16" fill="none" stroke="#f8f7fb" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="245" y="108" fill="#322044" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="1.2">PREMIER</text>
+  <text x="245" y="177" fill="#7040a1" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="1.2">LEAGUE</text>
+  <rect x="622" y="148" width="7" height="27" rx="3.5" fill="url(#lime)"/>
+  <text x="647" y="169" fill="#6d6875" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" letter-spacing="2.2">MATCH</text>
+  <text x="647" y="191" fill="#6d6875" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" letter-spacing="2.2">CENTRE</text>
+</svg>

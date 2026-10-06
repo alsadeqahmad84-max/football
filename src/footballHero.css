@@ -1,0 +1,72 @@
+/* A visible stadium photograph extends the dashboard's existing lime/purple identity. */
+.pl-hero {
+  min-height:330px;
+  padding:24px 34px;
+  background-color:#151d28;
+  background-image:none;
+  box-shadow:0 18px 42px #18232929;
+}
+.pl-stadium-backdrop {
+  position:absolute;
+  inset:0;
+  z-index:0;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center bottom;
+  pointer-events:none;
+}
+.pl-hero::after {
+  z-index:1;
+  opacity:1;
+  pointer-events:none;
+  background-image:linear-gradient(90deg,rgba(22,15,38,.96) 0%,rgba(22,15,38,.86) 30%,rgba(22,15,38,.48) 51%,rgba(14,22,29,.03) 75%);
+}
+.pl-hero .pl-hero-copy { z-index:3;max-width:min(490px,65%); }
+.pl-hero .pl-league-selector { margin-bottom:10px; }
+.pl-hero .pl-league-choice { width:44px;height:44px; }
+.pl-hero .pl-league-choice.premier { width:64px;height:64px; }
+.pl-hero h1 { margin:10px 0 0;font-size:clamp(46px,4.5vw,60px); }
+.pl-hero .pl-overline { color:#e4e6de; }
+.pl-hero .pl-hero-copy>p { margin:10px 0 15px;color:#e0e2e6;font-size:11px;line-height:1.55; }
+.pl-hero .pl-season-meta { color:#dbe0de; }
+.pl-hero .pl-league-choice:not(.premier) {
+  border-color:#ffffff40;
+  background:#302b3ace;
+  box-shadow:0 3px 12px #00000014;
+}
+.pl-hero .pl-league-choice:not(.premier):hover { background:#45404fea; }
+.pl-hero .pl-league-choice.active:not(.premier) { border-color:var(--pl-lime);background:#383c2ede; }
+.pl-hero .pl-hero-index { z-index:3;top:14px;bottom:auto;right:20px;color:#e8eee5; }
+.pl-hero .pl-hero-index span { color:#c7d1c4; }
+
+@media(max-width:1080px) {
+  .pl-hero { padding:24px 27px; }
+  .pl-stadium-backdrop { object-position:65% bottom; }
+  .pl-hero .pl-hero-copy { max-width:70%; }
+}
+@media(max-width:760px) {
+  .pl-hero {
+    min-height:400px;
+    padding:20px 23px 110px;
+  }
+  .pl-stadium-backdrop { object-position:75% bottom; }
+  .pl-hero::after { background-image:linear-gradient(180deg,rgba(22,15,38,.94) 0%,rgba(22,15,38,.77) 48%,rgba(22,15,38,.24) 72%,rgba(14,22,29,.04) 100%); }
+  .pl-hero .pl-hero-copy { max-width:100%; }
+  .pl-hero .pl-league-selector { gap:5px;margin-bottom:8px; }
+  .pl-hero .pl-league-choice.premier { width:52px;height:52px; }
+  .pl-hero h1 { margin-top:8px;font-size:46px; }
+  .pl-hero .pl-hero-copy>p { max-width:340px;margin:9px 0 12px;font-size:11px; }
+  .pl-hero .pl-hero-actions { flex-wrap:wrap;gap:8px; }
+  .pl-hero .pl-primary-btn { min-height:35px; }
+  .pl-hero .pl-season-meta { flex-basis:100%;font-size:8px; }
+}
+@media(max-width:420px) {
+  .pl-hero { min-height:385px;padding:18px 18px 105px; }
+  .pl-hero h1 { font-size:43px; }
+  .pl-hero .pl-hero-copy>p { max-width:100%;font-size:11px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .pl-hero { animation:none!important; }
+}

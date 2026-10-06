@@ -1,0 +1,116 @@
+.pl-rankings { --rankings-ink:#22162f;--rankings-purple:#7738c8;--rankings-lime:#c9f264;--rankings-line:#ece7f3;--rankings-muted:#777184;min-width:0;margin-top:26px;color:var(--rankings-ink); }
+.pl-rankings-heading { display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px; }
+.pl-rankings-eyebrow { display:flex;align-items:center;gap:7px;color:#896f9e;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase; }
+.pl-rankings-eyebrow::before { content:'';width:6px;height:6px;border-radius:50%;background:var(--rankings-accent,#7738c8); }
+.pl-rankings-heading h2 { margin:4px 0 3px;font-size:clamp(27px,3vw,36px);font-weight:800;line-height:1.2;letter-spacing:-.025em; }
+.pl-rankings-heading p { margin:0;color:var(--rankings-muted);font-size:14px; }
+.pl-rankings-heading p>span { margin:0 5px; }
+.pl-rankings-image { display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;overflow:hidden; }
+.pl-rankings-image img { display:block;width:100%;height:100%;object-fit:contain; }
+.pl-rankings-initials { display:grid;place-items:center;width:100%;height:100%;color:#6c3a91;font-size:12px;font-weight:800;letter-spacing:.02em; }
+.pl-rankings-league-logo { width:74px;height:68px; }
+.pl-rankings-tabs { display:flex;gap:8px;width:max-content;max-width:100%;margin-bottom:18px;padding:5px;border:1px solid #e6dfef;border-radius:13px;background:#efebf5; }
+.pl-rankings-tabs button { display:flex;align-items:center;justify-content:center;gap:9px;min-height:45px;padding:0 18px;border:0;border-radius:9px;background:transparent;color:#736381;font-size:15px;font-weight:750;transition:background .16s,color .16s,box-shadow .16s; }
+.pl-rankings-tabs button[aria-selected="true"] { background:#fff;color:#552681;box-shadow:0 3px 10px #36214110; }
+.pl-rankings-tabs button:hover { color:#552681; }
+.pl-rankings-tab-count { display:grid;place-items:center;min-width:25px;height:24px;padding:0 6px;border-radius:7px;background:#ede5f8;color:#6d3c9d;font-size:12px; }
+.pl-rankings-tabs button:focus-visible,.pl-rankings-table-scroll:focus-visible,.pl-rankings-panel:focus-visible { outline:3px solid #7738c87a;outline-offset:3px; }
+.pl-rankings-panel { overflow:hidden;border:1px solid var(--rankings-line);border-radius:18px;background:#fff;box-shadow:0 10px 28px #3f255605; }
+.pl-rankings-panel[hidden] { display:none; }
+.pl-rankings-panel-intro { display:flex;align-items:center;justify-content:space-between;gap:12px;padding:23px 25px 20px; }
+.pl-rankings-panel-intro h3 { margin:0 0 3px;font-size:21px;line-height:1.3;font-weight:800; }
+.pl-rankings-panel-intro p { margin:0;color:var(--rankings-muted);font-size:14px; }
+.pl-rankings-count-label { padding:6px 10px;border-radius:7px;background:#f4effa;color:#694089;font-size:12px;font-weight:750;white-space:nowrap; }
+.pl-rankings-table-scroll { max-width:100%;overflow:auto;overscroll-behavior-x:contain;scrollbar-color:#cec1e0 #f6f3fa;scrollbar-width:thin; }
+.pl-rankings-table { width:100%;min-width:820px;border-spacing:0;border-collapse:separate;font-size:15px;line-height:1.3;font-variant-numeric:tabular-nums; }
+.pl-rankings-table th,.pl-rankings-table td { height:60px;padding:12px 9px;border-bottom:1px solid #f0ecf5;text-align:center;white-space:nowrap; }
+.pl-rankings-table thead th { height:43px;background:#f8f5fc;color:#8a7898;font-size:12px;font-weight:750;letter-spacing:.025em; }
+.pl-rankings-table abbr { text-decoration:none;cursor:help; }
+.pl-rankings-table tbody tr:last-child>th,.pl-rankings-table tbody tr:last-child>td { border-bottom:0; }
+.pl-rankings-table tbody tr:hover>th,.pl-rankings-table tbody tr:hover>td { background:#faf7fe; }
+.pl-rankings-table .pl-rankings-club-cell { position:sticky;left:0;z-index:2;min-width:222px;width:31%;padding-left:21px;background:#fff;text-align:left;box-shadow:5px 0 10px -8px #573c7b38; }
+.pl-rankings-table thead .pl-rankings-club-cell { z-index:3;background:#f8f5fc; }
+.pl-rankings-club { display:flex;align-items:center;gap:11px; }
+.pl-rankings-position { min-width:25px;color:#8b799a;font-size:14px;font-weight:600;text-align:center; }
+.pl-rankings-badge { width:29px;height:32px; }
+.pl-rankings-club-name { max-width:190px;overflow:hidden;color:#2b2034;font-size:15px;font-weight:750;text-overflow:ellipsis; }
+.pl-rankings-table .pl-rankings-points-cell { position:sticky;right:0;z-index:2;min-width:56px;width:56px;background:#faf7fe;color:#54277e;box-shadow:-5px 0 10px -8px #573c7b38; }
+.pl-rankings-table thead .pl-rankings-points-cell { background:#efe7f8;color:#704b8e; }
+.pl-rankings-points-cell strong { font-size:17px;font-weight:800; }
+.pl-rankings-table .pl-rankings-leader-row>th,.pl-rankings-table .pl-rankings-leader-row>td { background:#fbfdf6; }
+.pl-rankings-leader-row .pl-rankings-position { display:grid;place-items:center;width:25px;height:25px;border-radius:7px;background:var(--rankings-lime);color:#354218;font-weight:800; }
+.pl-rankings-table .pl-rankings-leader-row>.pl-rankings-points-cell { background:#eff8df;color:#3d5424; }
+.pl-rankings-goal-difference { font-weight:650; }
+.pl-rankings-form-cell { width:139px; }
+.pl-rankings-form { display:flex;align-items:center;justify-content:center;gap:4px; }
+.pl-rankings-form>span { display:grid;place-items:center;width:21px;height:23px;border-radius:5px;font-size:11px;font-weight:800; }
+.pl-rankings-form-w { background:#e0f3e6;color:#246443; }.pl-rankings-form-d { background:#ebe7f2;color:#70657f; }.pl-rankings-form-l { background:#fce6e9;color:#a74456; }
+.pl-rankings-dash { color:#b4aabf; }
+.pl-rankings-table-key { display:flex;align-items:center;flex-wrap:wrap;gap:10px 17px;margin:0;padding:18px 25px;color:#85748f;font-size:12px;border-top:1px solid #f0ecf5; }
+.pl-rankings-table-key>span { display:inline-flex;align-items:center;gap:5px; }
+.pl-rankings-table-key strong { color:#5e4b70;font-weight:750; }
+.pl-rankings-table-key i { width:9px;height:9px;border-radius:3px; }
+.pl-rankings-scroll-hint { display:none!important;margin-left:auto; }
+.pl-rankings-data-note { display:flex;align-items:flex-start;gap:8px;margin:0;padding:15px 25px;border-top:1px solid #eee8f5;background:#fcfafe;color:#84708f;font-size:12px;line-height:1.6; }
+.pl-rankings-data-note>span { display:grid;place-items:center;flex:0 0 auto;width:15px;height:15px;margin-top:2px;border:1px solid #b7a4c7;border-radius:50%;font-size:10px;font-weight:750;line-height:1; }
+.pl-rankings-scorers { padding:0 25px 8px; }
+.pl-rankings-featured-scorer { position:relative;display:flex;align-items:center;gap:20px;min-height:224px;padding:26px 26px;border-radius:14px;background:radial-gradient(ellipse at 100% 65%,#694795,transparent 65%),linear-gradient(112deg,#231831,#412554);color:#fff;overflow:hidden;isolation:isolate; }
+.pl-rankings-featured-scorer::after { content:'';position:absolute;z-index:-1;right:-55px;bottom:-165px;width:430px;height:430px;border:1px solid #d9c6f21a;border-radius:50%;box-shadow:0 0 0 40px #d9c6f207,0 0 0 80px #d9c6f205; }
+.pl-rankings-featured-copy { position:relative;z-index:1;flex:1;min-width:0; }
+.pl-rankings-featured-label { display:flex;align-items:center;gap:8px;color:var(--rankings-lime);font-size:12px;font-weight:800;letter-spacing:.085em;text-transform:uppercase; }
+.pl-rankings-featured-label svg { width:19px;height:19px; }
+.pl-rankings-featured-copy h3 { max-width:280px;margin:12px 0 8px;font-size:clamp(25px,3vw,33px);font-weight:800;line-height:1.13;letter-spacing:-.02em; }
+.pl-rankings-featured-club { display:flex;align-items:center;gap:8px;color:#e1d5eb;font-size:14px;font-weight:650; }
+.pl-rankings-featured-club .pl-rankings-badge { width:23px;height:25px; }
+.pl-rankings-featured-goals { position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;flex:0 0 auto;color:var(--rankings-lime); }
+.pl-rankings-featured-goals strong { font-family:'Bebas Neue',Impact,sans-serif;font-size:80px;font-weight:400;line-height:1;letter-spacing:.01em; }
+.pl-rankings-featured-goals>span { color:#ddcee8;font-size:12px;font-weight:750;letter-spacing:.07em;text-transform:uppercase; }
+.pl-rankings-featured-photo { align-self:flex-end;width:150px;height:187px;margin:0 -14px -26px 0; }
+.pl-rankings-featured-photo img { object-fit:contain;object-position:center bottom;filter:drop-shadow(0 8px 14px #11091f35); }
+.pl-rankings-featured-photo .pl-rankings-initials { width:120px;height:120px;align-self:center;border-radius:50%;background:#ffffff0d;color:#d7c3eb;font-size:35px; }
+.pl-rankings-scorer-statistics { display:flex;flex-wrap:wrap;gap:4px 13px;color:#91839c;font-size:12px;line-height:1.5; }
+.pl-rankings-scorer-statistics strong { color:#675274;font-weight:750; }
+.pl-rankings-featured-scorer .pl-rankings-scorer-statistics { gap:4px 18px;margin-top:17px;color:#bbaaC9;font-size:12px; }
+.pl-rankings-featured-scorer .pl-rankings-scorer-statistics strong { color:#f7efff;font-size:14px; }
+.pl-rankings-scorer-list-head { display:flex;justify-content:space-between;gap:12px;margin-top:23px;padding:0 5px 12px;border-bottom:1px solid var(--rankings-line);color:#8b7899;font-size:12px;font-weight:750; }
+.pl-rankings-scorer-list { padding:0;margin:0;list-style:none; }
+.pl-rankings-scorer-list li { display:flex;align-items:center;gap:15px;min-height:107px;padding:16px 5px;border-bottom:1px solid #f0ecf5; }
+.pl-rankings-scorer-list li:last-child { border-bottom:0; }
+.pl-rankings-scorer-rank { display:grid;place-items:center;flex:0 0 auto;min-width:26px;height:29px;color:#8c789b;font-size:16px;font-weight:750; }
+.pl-rankings-first-scorer .pl-rankings-scorer-rank { border-radius:7px;background:#f1e9fa;color:#64328f; }
+.pl-rankings-player-photo { width:61px;height:69px;border-radius:10px;background:linear-gradient(150deg,#f2ecfa,#e6ddf1); }
+.pl-rankings-player-photo img { object-position:center bottom; }
+.pl-rankings-player-photo .pl-rankings-initials { font-size:18px; }
+.pl-rankings-scorer-copy { flex:1;min-width:0; }
+.pl-rankings-scorer-copy h3 { margin:0 0 4px;color:#362240;font-size:16px;font-weight:800;line-height:1.25; }
+.pl-rankings-scorer-club { display:flex;align-items:center;gap:5px;margin-bottom:5px;color:#82708e;font-size:13px;line-height:1.3; }
+.pl-rankings-mini-badge { width:15px;height:18px; }
+.pl-rankings-scorer-goals { display:flex;flex-direction:column;align-items:center;flex:0 0 auto;min-width:46px; }
+.pl-rankings-scorer-goals strong { color:#5b2d81;font-size:30px;font-weight:800;line-height:1; }
+.pl-rankings-scorer-goals small { margin-top:3px;color:#a08cae;font-size:11px; }
+.pl-rankings-goal-track { display:block;max-width:230px;height:3px;margin-top:8px;border-radius:3px;background:#f0ebf6;overflow:hidden; }
+.pl-rankings-goal-track>span { display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#bb98df,#7f45b4); }
+.pl-rankings-first-scorer .pl-rankings-goal-track>span { background:linear-gradient(90deg,#aacd55,var(--rankings-lime)); }
+.pl-rankings-empty { display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:315px;padding:35px 25px;text-align:center; }
+.pl-rankings-empty-mark { display:grid;place-items:center;width:61px;height:61px;margin-bottom:16px;border-radius:18px;background:#f3ecfb;color:#8b60b0; }
+.pl-rankings-empty h3 { margin:0 0 8px;font-size:20px;font-weight:800; }
+.pl-rankings-empty p { max-width:490px;margin:0;color:#86758f;font-size:14px;line-height:1.6; }
+.pl-rankings-loading { min-height:315px;padding:24px 25px; }
+.pl-rankings-loading p { margin:0 0 22px;color:#7d648e;font-size:14px; }
+.pl-rankings-loading>div { display:grid;gap:12px; }
+.pl-rankings-loading>div>span { height:42px;border-radius:8px;background:linear-gradient(90deg,#f3eef8,#faf7fd,#f3eef8);background-size:200% 100%;animation:pl-rankings-shimmer 1.8s linear infinite; }
+.pl-rankings-sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+@keyframes pl-rankings-shimmer { to { background-position:-200% 0; } }
+@media(max-width:1080px) { .pl-rankings-featured-photo { width:125px; }.pl-rankings-featured-scorer { gap:15px; }.pl-rankings-featured-copy h3 { max-width:220px; }.pl-rankings-scroll-hint { display:inline-flex!important; } }
+@media(max-width:760px) {
+  .pl-rankings { margin-top:24px; }.pl-rankings-heading { margin-bottom:18px;gap:12px; }.pl-rankings-heading h2 { font-size:29px; }.pl-rankings-heading p { font-size:13px; }.pl-rankings-eyebrow { font-size:10px; }.pl-rankings-league-logo { width:61px;height:58px; }
+  .pl-rankings-tabs { width:100%;gap:4px;margin-bottom:15px; }.pl-rankings-tabs button { flex:1;gap:7px;padding:0 8px;font-size:14px; }.pl-rankings-tabs svg { width:19px;height:19px; }.pl-rankings-tab-count { min-width:22px;height:22px;font-size:11px; }
+  .pl-rankings-panel { border-radius:14px; }.pl-rankings-panel-intro { padding:20px 16px 17px; }.pl-rankings-panel-intro h3 { font-size:20px; }.pl-rankings-panel-intro p { max-width:215px;font-size:13px; }.pl-rankings-count-label { padding:5px 7px;font-size:11px; }
+  .pl-rankings-table { min-width:745px;font-size:14px; }.pl-rankings-table .pl-rankings-club-cell { min-width:174px;width:174px;padding-left:11px;padding-right:8px; }.pl-rankings-club { gap:7px; }.pl-rankings-club-name { max-width:116px;font-size:14px; }.pl-rankings-position { min-width:21px;font-size:13px; }.pl-rankings-badge { width:23px;height:28px; }.pl-rankings-leader-row .pl-rankings-position { width:21px;height:24px; }.pl-rankings-table .pl-rankings-points-cell { min-width:49px;width:49px; }.pl-rankings-points-cell strong { font-size:16px; }
+  .pl-rankings-table-key { gap:8px 13px;padding:15px 16px;font-size:11px; }.pl-rankings-scroll-hint { flex-basis:100%;margin-left:0; }.pl-rankings-data-note { padding:13px 16px;font-size:12px; }
+  .pl-rankings-scorers { padding:0 14px 4px; }.pl-rankings-featured-scorer { min-height:206px;padding:21px 18px;gap:10px; }.pl-rankings-featured-label { font-size:10px;letter-spacing:.06em; }.pl-rankings-featured-label svg { width:17px;height:17px; }.pl-rankings-featured-copy h3 { max-width:170px;font-size:26px; }.pl-rankings-featured-club { max-width:175px;font-size:13px; }.pl-rankings-featured-goals strong { font-size:64px; }.pl-rankings-featured-goals>span { font-size:10px; }.pl-rankings-featured-photo { position:absolute;right:13px;bottom:0;z-index:0;width:97px;height:126px;margin:0;opacity:.7; }.pl-rankings-featured-goals { align-self:flex-start; }.pl-rankings-featured-scorer .pl-rankings-scorer-statistics { max-width:205px;gap:4px 10px;font-size:11px; }.pl-rankings-featured-scorer .pl-rankings-scorer-statistics strong { font-size:13px; }
+  .pl-rankings-scorer-list li { gap:10px;padding:16px 1px;min-height:105px; }.pl-rankings-scorer-rank { min-width:21px;font-size:14px; }.pl-rankings-player-photo { width:49px;height:58px;border-radius:9px; }.pl-rankings-scorer-copy h3 { font-size:15px; }.pl-rankings-scorer-club { font-size:12px; }.pl-rankings-scorer-statistics { gap:3px 9px;font-size:11px; }.pl-rankings-scorer-goals { min-width:37px; }.pl-rankings-scorer-goals strong { font-size:26px; }.pl-rankings-scorer-goals small { font-size:10px; }
+  .pl-rankings-empty { padding:30px 18px; }.pl-rankings-empty h3 { font-size:19px; }.pl-rankings-loading { padding:24px 16px; }
+}
+@media(prefers-reduced-motion:reduce) { .pl-rankings-loading>div>span { animation:none; }.pl-rankings-tabs button { transition:none; } }
+.pl-rankings-table.pl-rankings-no-form { min-width:680px; }
