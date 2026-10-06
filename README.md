@@ -1,6 +1,8 @@
-# Umniah Voice Invoice Desk
+# Football Match Centre
 
-A browser-based prototype for managing VOIP customers and revenue invoices. It includes a revenue dashboard, customer directory, invoice drafting and issuing, payment status tracking, and automatic tax-inclusive PDF downloads when an invoice is issued. Issued PDFs can also be downloaded again from invoice details.
+A football dashboard for Premier League fixtures, results, match reports, lineups, standings, fantasy picks, and other league match centres. The root page opens the football dashboard, which is also available at `/football`.
+
+The Umniah Voice invoice desk is retained at `/invoices`.
 
 ## Start the app
 

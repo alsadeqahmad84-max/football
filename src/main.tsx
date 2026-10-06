@@ -8,6 +8,6 @@ import './footballHero.css'
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {window.location.pathname.startsWith('/football') ? <PremierLeagueHub /> : <App />}
+    {window.location.pathname.startsWith('/invoices') ? <App /> : <PremierLeagueHub />}
   </React.StrictMode>,
 )
